@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+*{
+	text-transform: capitalize;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+i{
+	padding-right: 10px;
+}
+
+.text-primary {
+	color: #FD6E0A;
+
+}
+p {
+	font-weight: 400;
+	font-size: 18px;
+	color: #757575;
+}
+h3 {
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+.btn-primary {
+	height: 64px;
+	background: #FD6E0A;
+	border-radius: 5px;
+	border: none;
+	padding: 0 35px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+	color: #FFF;
+	margin-right: 7px;
+	cursor: pointer;
+
+}
+.extra-btn {
+	background: #FFF;
+	border: 1px solid #FD6E0A;
+	color: #FD6E0A;
+}
+
+/*    Header and navbar styles	  */
+.header {
+	background: #FFF8F3 url('../images/header_bg.png') no-repeat;
+	background-position: bottom right;
+}
+.header::before {
+	content: 'swordsman';
+	color: rgba(24, 24, 24, 0.15);
+	font-weight: 700;
+	font-size: 70px;
+	text-transform: uppercase;
+	transform: rotate(-90deg);
+	letter-spacing: 0.25em;
+	position: absolute;
+	left: -14%;
+	top: 3.8em;
+}
+.inner {
+	padding: 50px 200px 0;
+}
+.nav-title {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 45px;
+	margin-right: auto;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+nav ul li {
+	padding: 0 25px;
+}
+nav ul li a {
+	color: #474747;
+	text-decoration: none;
+}
+/*     Style for banner    */
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+}
+.banner .intro {
+	font-weight: 600;
+	font-size: 45px;
+	color: #474747;
+}
+.banner .name {
+	font-weight: 700;
+	font-size: 77px;
+	color: #181818;
+}
+.banner .description {
+	font-weight: 400;
+	font-size: 18px;
+	color: #757575;
+	margin: 20px 0;
+}
+.banner img {
+	height: 457px;
+	margin-left: 26%;
+}
+
+/*    Main section design   */
+.about-me {
+	width: 75%;
+	margin: 50px auto;
+	text-align: center;
+	padding: 130px 150px;
+	background: #FFF8F3;
+	border-radius: 10px;
+}
+
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.info strong {
+	font-weight: 700;
+	font-size: 19px;
+	color: #474747;
+
+} 
+.work-sec {
+	text-align: center;
+	width: 66%;
+	margin: 50px auto;
+}
+
+.skill-set {
+	width: 78%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+.skill-set div {
+	background: #FFFFFF;
+	box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+	border-radius: 5px;
+	margin-right: 24px;
+	padding: 30px;
+}
+.skill-set div p {
+	text-align: justify;
+	font-size: 16px;
+}
+.skill-set div img {
+	height: 44px;
+	text-align: left;
+}
+/*   Footer style   */
+.footer {
+	background: #FFF8F3;
+	padding: 100px 0;
+	margin-top: 50px;
+}
+.footer i {
+	color: #FD6E0A;
+	padding: 0;
+	transition: 0.2s ease;
+}
+.inner-footer {
+	width: 78%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+.logo {
+	margin-top: 30px;
+	padding: 5px;
+}
+.logo .fa-brands:hover{
+    background-color: #FD6E0A;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.contact {
+	margin-right: 110px;
+}
+.message {
+	margin-left: auto;
+}
+.message input,textarea {
+	display: block;
+	width: 461px;
+	height: 64px;
+	border: none;
+	margin-bottom: 25px;
+	padding: 30px;
+}
+textarea {
+	height: auto;
+
+}
