@@ -13,7 +13,8 @@ i{
 
 .text-primary {
 	color: #FD6E0A;
-
+	transition: .5s cubic-bezier(.45,.05,.55,.95);
+	text-transform: uppercase;
 }
 p {
 	font-weight: 400;
@@ -49,6 +50,7 @@ h3 {
 .header {
 	background: #FFF8F3 url('../images/header_bg.png') no-repeat;
 	background-position: bottom right;
+	position: relative;
 }
 .header::before {
 	content: 'swordsman';
@@ -79,10 +81,12 @@ nav ul{
 }
 nav ul li {
 	padding: 0 25px;
+	position: relative;
 }
 nav ul li a {
 	color: #474747;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 /*     Style for banner    */
 .banner {
@@ -96,6 +100,10 @@ nav ul li a {
 	font-size: 45px;
 	color: #474747;
 }
+.banner .banner-text {
+	width: 62%;
+	margin: 0 0 4em 0;
+}
 .banner .name {
 	font-weight: 700;
 	font-size: 77px;
@@ -108,21 +116,22 @@ nav ul li a {
 	margin: 20px 0;
 }
 .banner img {
-	height: 457px;
-	margin-left: 26%;
+	height: 423px;
+	position: absolute;
+	right: 6%;
+	bottom: 0;
 }
 
 /*    Main section design   */
+
 .about-me {
-	width: 75%;
+	width: 85%;
 	margin: 50px auto;
 	text-align: center;
-	padding: 130px 150px;
+	padding: 78px 150px;
 	background: #FFF8F3;
 	border-radius: 10px;
 }
-
-
 .info {
 	display: flex;
 	justify-content: space-between;
@@ -153,6 +162,7 @@ nav ul li a {
 	border-radius: 5px;
 	margin-right: 24px;
 	padding: 30px;
+	transition: .2s ease;
 }
 .skill-set div p {
 	text-align: justify;
@@ -206,4 +216,58 @@ nav ul li a {
 textarea {
 	height: auto;
 
+}
+input:focus,textarea:focus {
+	outline: 2px solid #fd6e0a;
+}
+
+/*  Effects  */
+.under-effect::before {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #fd6e0a;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 120%;
+	transition: .5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+ul li:hover .under-effect::before {
+	width: 50%;
+	transform: translateX(100%);
+}
+#text:hover .text-primary {
+	background: #fd6e0a;
+	color: #FFF;
+}
+/*button hover effect*/
+.effect-btn {
+	position: relative;
+	z-index: 1;
+	transition: color .3s ease;
+}
+.effect-btn::before {
+	content: '';
+	width: 0;
+	height: 100%;
+	position: absolute;
+	background: #FFF;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+	transition: .3s ease;
+	z-index: -1;
+}
+a:hover .effect-btn::before {
+	width: 100%;
+	border: 1px solid #fd6e0a;
+}
+a:hover .effect-btn{
+	color: #fd6e0a;
+}
+/*card hover effect*/
+.power-divs:hover {
+	box-shadow: 0px 6px 50px #f7b282;
+	transform: scale(1.07);
 }
