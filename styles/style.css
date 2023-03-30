@@ -319,6 +319,9 @@ a:hover .effect-btn{
 	h3 {
 		margin-bottom: 0;
 	}
+	p{
+		text-align: justify;
+	}
 	.banner,.inner{
 		padding: 0;
 	}
@@ -350,6 +353,7 @@ a:hover .effect-btn{
 		color: #FFF !important;
 	}
 	/*nav hamberger */
+	
 	.check-btn {
 		display: block;
 		position: absolute;
@@ -382,7 +386,6 @@ a:hover .effect-btn{
 	}
 	.effect-btn {
 		display: block;
-		margin-bottom: 1em;
 	}
 	.banner img {
 		position: unset;
@@ -392,15 +395,23 @@ a:hover .effect-btn{
 	.banner .img {
 		height: 220px;
 	}
+	.btn-primary{
+		margin: 0 auto 1em;
+		display: block;
+	}
+
 	/*main section responsive*/
 	.about-me {
 		padding: 10px;
 		text-align: unset;
 	}
 	.info {
-		align-items: start;
+		align-items: center;
 		margin-top: 1em;
 		flex-direction: column;
+	}
+	.info p {
+		text-align: center;
 	}
 	.work-sec {
 		width: 80%;
